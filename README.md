@@ -1,3 +1,7 @@
+# DT's in Practice
+
+This is just a very simple page using Astro UXDS design tokens for styling.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
