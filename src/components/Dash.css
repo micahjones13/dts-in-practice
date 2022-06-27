@@ -1,0 +1,35 @@
+@import "../../node_modules/@astrouxds/design-tokens/dist/css/_colors-dark.css";
+@import "../../node_modules/@astrouxds/design-tokens/dist/css/_variables.css";
+
+.dash-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#back-btn,
+#to-table {
+  height: var(--spacing-8);
+  width: var(--spacing-24);
+  background-color: var(--color-background-interactive-default);
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  text-decoration: none;
+  border: var(--border-width-xs) solid var(--color-border-interactive-default);
+  border-radius: var(--radius-base);
+  align-self: flex-start;
+  margin-left: var(--spacing-10);
+  font-size: var(--font-size-base);
+}
+#back-btn:hover,
+#to-table:hover {
+  cursor: pointer;
+  background-color: var(--color-background-interactive-hover);
+}

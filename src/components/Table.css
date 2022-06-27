@@ -1,0 +1,27 @@
+@import "../../node_modules/@astrouxds/design-tokens/dist/css/_colors-dark.css";
+@import "../../node_modules/@astrouxds/design-tokens/dist/css/_variables.css";
+
+table {
+  color: var(--color-text-primary);
+  background-color: var(--color-background-surface-default);
+  border: var(--border-width-xs) solid var(--color-border-interactive-default);
+  width: 90vw;
+  margin: auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+thead tr {
+  background-color: var(--color-background-surface-header);
+  height: var(--spacing-16);
+  font-size: var(--font-heading-2-font-size);
+  font-family: var(--font-heading-2-font-family);
+  border-bottom: var(--border-width-xs) solid
+    var(--color-border-interactive-muted);
+}
+td {
+  padding: var(--spacing-4);
+  border-top: var(--border-width-xs) solid
+    var(--color-border-interactive-default);
+  border-bottom: var(--border-width-xs) solid
+    var(--color-border-interactive-default);
+}

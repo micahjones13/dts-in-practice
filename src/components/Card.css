@@ -1,0 +1,37 @@
+@import "../../node_modules/@astrouxds/design-tokens/dist/css/_colors-dark.css";
+@import "../../node_modules/@astrouxds/design-tokens/dist/css/_variables.css";
+
+.card-wrapper {
+  width: 400px;
+  height: 400px;
+  border-radius: var(--raidus-base);
+  background-color: var(--color-background-surface-default);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: var(--spacing-4);
+  position: relative;
+}
+
+.card-title {
+  font-family: var(--font-heading-3-font-family);
+  font-size: var(--font-heading-3-font-size);
+}
+
+.card-content {
+  padding: var(--spacing-4);
+}
+
+.launch-date {
+  align-self: flex-start;
+  margin: var(--spacing-4);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text-interactive-default);
+}
+a:hover {
+  color: var(--color-text-interactive-hover);
+}

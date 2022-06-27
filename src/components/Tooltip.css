@@ -1,0 +1,30 @@
+@import "../../node_modules/@astrouxds/design-tokens/dist/css/_colors-dark.css";
+@import "../../node_modules/@astrouxds/design-tokens/dist/css/_variables.css";
+
+.tooltip-wrapper {
+  min-height: var(--spacing-4);
+  min-width: var(--spacing-8);
+  padding: var(--spacing-3);
+  color: var(--color-text-primary);
+  background-color: var(--color-background-base-default);
+  border-radius: var(--radius-base);
+  z-index: 5;
+  border: 1px solid var(--color-border-interactive-muted);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text-interactive-default);
+}
+a:hover {
+  color: var(--color-text-interactive-hover);
+}

@@ -1,0 +1,81 @@
+@import "../../node_modules/@astrouxds/design-tokens/dist/css/_colors-dark.css";
+@import "../../node_modules/@astrouxds/design-tokens/dist/css/_variables.css";
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--color-background-surface-default);
+  height: 400px;
+  width: 400px;
+  border-radius: var(--radius-base);
+  margin: var(--spacing-4) auto auto auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+form button {
+  margin-top: var(--spacing-4);
+}
+form input {
+  margin-top: var(--spacing-2);
+}
+
+input {
+  border-radius: var(--radius-base);
+  border: var(--border-width-xs) solid var(--color-border-interactive-default);
+  background-color: var(--color-background-surface-default);
+  color: var(--color-text-primary);
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  height: var(--spacing-10);
+  width: 80%;
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-8);
+}
+input::placeholder {
+  color: var(--color-text-placeholder);
+}
+input:hover {
+  border-color: var(--color-border-interactive-hover);
+}
+input:focus {
+  /* no focused? just hover again? */
+  border-color: var(--color-border-interactive-hover);
+}
+
+h1 {
+  font-size: var(--font-heading-1-font-size);
+  text-decoration: var(--font-heading-1-text-decoration);
+  font-family: var(--font-heading-1-font-family);
+  align-self: center;
+  text-align: center;
+}
+label {
+  align-self: flex-start;
+  margin-left: var(--spacing-10);
+}
+button {
+  height: var(--spacing-8);
+  width: var(--spacing-24);
+  background-color: var(--color-background-interactive-default);
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  text-decoration: none;
+  border: var(--border-width-xs) solid var(--color-border-interactive-default);
+  border-radius: var(--radius-base);
+  align-self: flex-start;
+  margin-left: var(--spacing-10);
+  font-size: var(--font-size-base);
+}
+button:hover {
+  cursor: pointer;
+  background-color: var(--color-background-interactive-hover);
+}
